@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    overflow:auto;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    object-fit: contain; 
+    filter: brightness(0.55); 
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    width: 90%;
+    margin: 10px 5%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Transparent background */
+    padding: 20px 0;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    box-shadow: 0 0 50px rgb(0, 0, 0);
+    border: 2px solid rgba(68, 68, 68, 0.173);
+    filter: brightness(2); 
+
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 10px;
+}
+
+.navbar .nav-links a:hover {
+    color: #85e2ff; /* Highlight color on hover */
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    text-shadow: 0 0 50px #45d4ff;    
+    text-shadow: 0 0 25px #45d4ff;    
+}
+
+/* Hero section */
+.hero {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    text-align: center;
+    z-index: 1; /* Make sure content is above the video */
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 600;
+    background: linear-gradient(to right,#72d9ff, #766fff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 100px #5f9cff ;
+    text-shadow: 0 0 50px #5f72ff ;
+}   
+.hero-content h1:hover{
+    letter-spacing: 10;
+}
+.hero-content p {
+    font-size: 18px;
+    margin: 20px 0 70px;
+    color: #d6f5ff;
+}
+.cta-button {
+    width: 170px;
+    display: inline-block;
+    padding: 15px ;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    width: 240px;
+    transition: all 0.3s ease;
+
+}
