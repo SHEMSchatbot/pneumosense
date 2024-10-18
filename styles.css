@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.3s ease;
+
 }
 
 body, html {
@@ -22,23 +24,34 @@ body, html {
 }
 
 /* Navbar styling */
+.navbar-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .navbar {
     position: fixed;
     width: 90%;
     margin: 10px 5%;
     top: 0;
-    left: 0;
     background: rgba(0, 0, 0, 0.5); /* Transparent background */
     padding: 20px 0;
     border-radius: 50px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 20px rgb(0, 0, 0);
     box-shadow: 0 0 50px rgb(0, 0, 0);
-    border: 2px solid rgba(68, 68, 68, 0.173);
+    border: 2px solid rgba(255, 255, 255, 0.06);
     filter: brightness(2); 
 
 }
-
+.navbar:hover{
+    transition: all 0.3s ease;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgb(5,5,5);
+    box-shadow: 0 0 50px rgb(5,5,5);    
+}
 .navbar .container {
     display: flex;
     justify-content: space-between;
@@ -49,8 +62,10 @@ body, html {
 .navbar .logo {
     font-size: 24px;
     font-weight: 600;
-    color: #fff;
     text-decoration: none;
+    background: linear-gradient(to right,#72d9ff, #5248ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar .nav-links {
@@ -75,8 +90,8 @@ body, html {
     color: #85e2ff; /* Highlight color on hover */
     transition: all 0.3s ease;
     border-radius: 10px;
-    text-shadow: 0 0 50px #45d4ff;    
-    text-shadow: 0 0 25px #45d4ff;    
+    text-shadow: 0 0 50px #ffffff;    
+    text-shadow: 0 0 25px #ffffff;    
 }
 
 /* Hero section */
@@ -123,4 +138,58 @@ body, html {
     width: 240px;
     transition: all 0.3s ease;
 
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    margin-bottom: 50px;
+    width: 60%;
+    display: flex;
+    border-radius: 10px;
+    padding: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.742);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+#grad1{
+    background: rgb(34,0,36);
+    background: linear-gradient(90deg, rgba(34,0,36,0.16) 0%, rgba(9,9,121,0.15) 48%, rgba(0,212,255,0.15) 100%);
+}
+#grad2{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,0.15) 0%, rgba(253,29,29,0.15) 50%, rgba(252,176,69,0.15) 100%);
+}
+.biju{
+    width: 200px;
+    margin: 20px;
+    justify-self: left;
+    border-radius: 10px;
+}
+.name-desc{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.name{
+    font-size: 30px;
+    color: white;
+    align-self: top; 
+    margin-top:20px; 
+    margin-bottom: 20px
+}
+.desc{
+    color: white;
 }
